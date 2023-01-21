@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Cupcake List</title>
+</head>
+<body>
+    <h1>Cupcakes</h1>
+    <ul id ="c-list">
+
+    </ul><br>
+    <h2>Add a Cupcake</h2>
+    <form id="c-form">
+        <label for="flavor">Flavor</label><br>
+        <input type="text" id="flavor" name="flavor" placeholder="Type text" required><br><br>
+
+        <label for="size">Size</label><br>
+        <select type="text" id="size" name="size">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </select><br><br>
+
+        <label for="rating">Rating</label><br>
+        <input type="number" id="rating" name="rating" min="0" max="10" step=".1" placeholder="0-10" required><br><br>
+
+        <label for="image">Image URL</label><br>
+        <input type="url" id="image" name="image" placeholder="Paste a link"><br><br>
+        <button id="c-btn">Add</button>
+    </form>
+</body>
+<script src="static/app.js"></script>
+</html>
