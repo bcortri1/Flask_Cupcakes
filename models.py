@@ -11,7 +11,7 @@ def connect_db(app):
 class Cupcake(db.Model):
     """Contains all user information related to a cupcake"""
     def __repr__(self):
-        return f"Cupcake: #{self.id} {self.size} {self.flavor} {self.rating}/5"
+        return f"Cupcake: #{self.id} {self.size} {self.flavor} {self.rating}/10"
     
     __tablename__ = "cupcakes"
     
